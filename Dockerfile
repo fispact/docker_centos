@@ -22,7 +22,7 @@ ENV RUN_SCRIPT ~/.bashrc
 WORKDIR /
 
 # Install additional packages
-RUN yum install -y wget which make gmake less doxygen rsync nano tar texi2html texinfo xz && \
+RUN yum install -y wget which make gmake less doxygen rsync nano tar texi2html texinfo xz git && \
     yum install -y libgcc gcc-c++ && \
     yum install -y gmp-devel mpfr-devel libmpc-devel openssl-devel && \
     yum install -y python-devel autoconf automake zlib-devel libpng-devel libjpeg-devel bzip2 zip && \
