@@ -1,4 +1,4 @@
-FROM centos:6.9
+FROM centos:7.4.1708
 MAINTAINER UKAEA <admin@fispact.ukaea.uk>
 
 # Build-time metadata as defined at http://label-schema.org
