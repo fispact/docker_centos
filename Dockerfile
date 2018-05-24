@@ -17,6 +17,12 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.license="Apache-2.0" \
       org.label-schema.schema-version="1.0"
 
+# some environment variables for regression testing
+# for centos 7 we use the same refences as centos 6
+ENV FISPACT_SYSTEM_TESTS_REF centos_6.9_gfortran_6_xsbinaries
+ENV PYTHONDONTWRITEBYTECODE 1.
+ENV PYTEST_VERBOSE line
+
 ENV RUN_SCRIPT ~/.bashrc
 
 WORKDIR /
