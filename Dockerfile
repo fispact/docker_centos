@@ -64,6 +64,7 @@ RUN yum install -y wget which make gmake less doxygen rsync nano tar texi2html t
     # pip3 packages
     pip3.4 install --upgrade pip && \
     pip3.4 install pytest pytest-xdist pypact numpy && \
+    dnf install glibc-static libstdc++-static -y && \
     cd / && rm -rf cmake-3.0.0.tar.gz cmake-3.0.0 Python-3.4.3.tar.xz Python-3.4.3
 
 CMD /bin/bash $RUN_SCRIPT
